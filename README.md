@@ -1,40 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# ALX Listing App
+
+## Overview
+ALX Listing App is a modern web application inspired by Airbnb's listing page functionality. This project aims to provide users with a seamless experience for browsing and managing property listings, complete with detailed property information, booking capabilities, and an intuitive user interface.
+
+## Project Goals
+- Create a responsive and user-friendly listing interface
+- Implement modern React best practices and TypeScript
+- Provide a scalable and maintainable codebase
+- Ensure accessibility and cross-browser compatibility
+- Optimize performance and loading times
+
+## Project Structure
+
+### `components/`
+Contains all React components organized by feature:
+- `layout/` - Core layout components (Header, Footer, Container)
+- `listing/` - Listing-specific components (ListingCard, ListingDetails)
+- `common/` - Reusable UI components (Button, Card, Input)
+- `filters/` - Search and filtering components
+- `modals/` - Modal components for bookings and user interactions
+
+### `interfaces/`
+TypeScript interfaces and types:
+- Component props definitions
+- API response types
+- State management interfaces
+- Utility type definitions
+
+### `constants/`
+Application-wide constants and configuration:
+- API endpoints
+- Theme configurations
+- Filter options
+- Static content
+
+### `public/assets/`
+Static assets used throughout the application:
+- Images and icons
+- Fonts
+- Static JSON data
+- Favicon and app icons
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+- Git
 
+### Installation
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/henryno111/alx-listing-app.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+cd alx-listing-app
+npm install
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+3. Start the development server:
+```bash
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Available Scripts
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+- `npm run dev` - Starts the development server
+- `npm run build` - Creates a production build
+- `npm run lint` - Runs ESLint for code quality
+- `npm run test` - Executes test suite
+- `npm run type-check` - Runs TypeScript compiler checks
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Learn More
+## Code Style Guidelines
+- Use TypeScript for all new files
+- Follow the existing component structure
+- Write unit tests for new components
+- Use meaningful component and variable names
+- Maintain proper documentation
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
+- React 18
+- TypeScript
+- Next.js 13
+- Tailwind CSS
+- React Query
+- Jest & React Testing Library
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+## Acknowledgments
+- Design inspiration from Airbnb
+- Icons from Lucide React
